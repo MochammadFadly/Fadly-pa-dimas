@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Legenda Sepak Bola</title>
+    <style>
+        /* Mengatur font, warna latar, dan margin dasar */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            background: #e9ecef; /* Abu-abu sangat muda */
+            color: #333; 
+        }
+
+        /* Gaya Header */
+        header { 
+            background: #1a252f; /* Biru gelap keabu-abuan */
+            color: #fff; 
+            padding: 3rem 1rem; 
+            text-align: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 10px 0 0; opacity: 0.8; font-weight: 300; }
+
+        /* Kontainer Utama */
+        .container { 
+            max-width: 900px; 
+            margin: 30px auto; 
+            padding: 20px; 
+        }
+
+        /* Judul Bagian */
+        h2 { 
+            color: #1a252f; 
+            text-align: center;
+            border-bottom: 3px solid #3498db; /* Garis bawah biru */
+            padding-bottom: 15px; 
+            margin-bottom: 30px;
+        }
+
+        /* Kartu Pemain (Flexbox untuk tata letak) */
+        .player-card { 
+            display: flex; 
+            align-items: center; 
+            background: #fff; 
+            padding: 25px; 
+            margin-bottom: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        /* Efek hover sedikit terangkat */
+        .player-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gaya Gambar Pemain */
+        .player-img { 
+            width: 160px; 
+            height: 160px; 
+            object-fit: cover; /* Memastikan gambar tidak gepeng */
+            border-radius: 50%; /* Membuat gambar bulat */
+            border: 5px solid #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            margin-right: 30px; /* Jarak gambar ke teks */
+            flex-shrink: 0; /* Mencegah gambar menyusut */
+        }
+
+        /* Gaya Teks di dalam kartu */
+        .player-info h3 { margin-top: 0; color: #2c3e50; font-size: 1.6rem; }
+        .player-info p { margin: 8px 0; color: #555; }
+        .posisi { font-weight: bold; color: #3498db; }
+
+        /* Gaya Footer */
+        footer { 
+            text-align: center; 
+            padding: 30px; 
+            font-size: 0.9rem; 
+            color: #7f8c8d; 
+            background: #fff;
+            margin-top: 40px;
+        }
+
+        /* --- Media Query untuk Responsif Mobila --- */
+        @media (max-width: 650px) {
+            .player-card {
+                flex-direction: column; /* Gambar di atas teks */
+                text-align: center;
+                padding: 20px;
+            }
+            .player-img {
+                margin-right: 0;
+                margin-bottom: 20px; /* Jarak bawah gambar */
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dunia Sepak Bola</h1>
+    <p>Profil Legenda dan Bintang Pilihan</p>
+</header>
+
+<div class="container">
+    <h2>Pemain Unggulan</h2>
+
+    <div class="player-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtVj37-eOY-5h5XT35IgJIcakN0p5wb1AiVncibEUsw&s=10" alt="Lionel Messi saat bermain" class="player-img">
+        
+        <div class="player-info">
+            <h3>Lionel Messi</h3>
+            <p><span class="posisi">Posisi:</span> Penyerang / Gelandang Serang</p>
+            <p>Sering dianggap sebagai pemain terbaik sepanjang sejarah. Dikenal karena kemampuan dribelnya yang ajaib, visi permainan yang luar biasa, dan rekor pencetak gol yang fantastis. Maestro sepak bola dari Argentina.</p>
+        </div>
+    </div>
+
+    <div class="player-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/960px-Cristiano_Ronaldo_2275_%28cropped%29.jpg" alt="Cristiano Ronaldo saat bermain" class="player-img">
+        
+        <div class="player-info">
+            <h3>Cristiano Ronaldo</h3>
+            <p><span class="posisi">Posisi:</span> Penyerang</p>
+            <p>Pencetak gol ulung dengan dedikasi luar biasa terhadap kebugaran fisik. Kombinasi kecepatan, kekuatan, kemampuan lompatan ikonik, dan insting gol yang tajam membuatnya menjadi striker paling ditakuti. Bintang dari Portugal.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Dunia Sepak Bola. Dibuat dengan semangat olahraga oleh Anda.</p>
+    <p>Gambar oleh Unsplash Contributors</p>
+</footer>
+
+</body>
+</html>
